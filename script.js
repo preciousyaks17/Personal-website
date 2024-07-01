@@ -1,17 +1,3 @@
-/*document.getElementById("currentTimeUTC").textContent =
-  new Date().toUTCString();
-document.getElementById("currentDay").textContent = new Date().toLocaleString(
-  "en-us",
-  { weekday: "long" }
-);
-document.getElementById("currentDate").textContent =
-  new Date().toLocaleDateString("en-us", { dateStyle: "full" });
-document.getElementById("currentYear").textContent = new Date().getFullYear();
-document.getElementById("currentMonth").textContent = new Date().toLocaleString(
-  "en-us",
-  { month: "long" }
-);*/
-
 document.addEventListener("DOMContentLoaded", () => {
   function updateTime() {
     const now = new Date();
