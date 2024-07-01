@@ -1,5 +1,130 @@
-* {
+/* style.css */
+body,
+html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  padding: 10px;
+  text-align: center;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+.full-name {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+span {
+  color: #4299e1;
+}
+.email {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #202423;
+  font-family: "Roboto", sans-serif;
+  margin-top: -15px;
+}
+.email::before {
+  content: "\f0e0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 5px;
+  color: #4299e1;
+}
+
+.email:hover {
+  text-decoration: underline;
+  color: #4299e1;
+}
+
+h2 {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.goals-container {
+  margin-top: -30px;
+}
+
+.goals {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.goals li {
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+div {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.useful-links-container {
+  margin-top: -40px;
+}
+.useful-links-header {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.useful-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.useful-links li {
+  background-color: #e2e8f0;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 4px;
+
+  font-family: "Roboto", sans-serif;
+}
+
+.useful-links a {
+  color: #2b6cb0;
+  text-decoration: none;
+}
+
+.useful-links a:hover {
+  text-decoration: underline;
+}
+
+.date {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #f0f0f0;
+  background-color: #4299e1;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: inline-block;
+}
+@media (max-width: 768px) {
 }

@@ -3,12 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link src="./style.css" href="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      src="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>My Tech Goals</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1 class="header">My Tech Goals for the Next 2 Years</h1>
+      <div class="profile-info">
+        <img
+          src="./slackImg.jpg"
+          alt="Slack Profile picture"
+          data-testid="slackProfilePicture"
+        />
+        <div class="full-name" data-testid="slackDisplayName">
+          Precious <span>Yakubu</span>
+        </div>
+        <div data-testid="slackEmail">
+          <a class="email" href="mailto:preciousyakubu307@gmail.com"
+            >preciousyakubu307@gmail.com</a
+          >
+        </div>
+      </div>
+      <div class="goals-container">
+        <h2>My Tech Goals</h2>
+        <ul class="goals">
+          <li>Master JavaScript and become proficient in React and Node.js</li>
+          <li>
+            Contribute to open-source projects to improve my coding skills and
+            network with other developers
+          </li>
+          <li>
+            Build a portfolio of projects that demonstrate my abilities in web
+            development
+          </li>
+          <li>
+            Learn about cloud computing and obtain a certification in Azure
+          </li>
+          <li>
+            Attend tech conferences and participate in hackathons to stay
+            updated with the latest trends
+          </li>
+          <li>
+            Improve my problem-solving skills by practicing algorithms and data
+            structures regularly
+          </li>
+        </ul>
+      </div>
+      <div class="useful-links-container">
+        <h2 class="useful-links-header">Useful Links</h2>
+        <ul class="useful-links">
+          <li>
+            <a href="http://hng.tech/learn" data-testid="hngLink"
+              >HNG Tech Learn</a
+            >
+          </li>
+          <li>
+            <a href="http://keyword.dog" data-testid="keywordLink"
+              >Keyword Dog</a
+            >
+          </li>
+          <li>
+            <a href="http://scrapeanyweb.site" data-testid="scrapeanywebLink"
+              >Scrape Any Web</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="date">
+        <div data-testid="currentTimeUTC" id="currentTimeUTC"></div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
